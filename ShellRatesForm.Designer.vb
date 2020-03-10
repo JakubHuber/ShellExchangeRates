@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class ShellRatesForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -91,7 +91,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(238, 116)
+        Me.Label4.Location = New System.Drawing.Point(295, 116)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(61, 20)
         Me.Label4.TabIndex = 5
@@ -100,7 +100,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(220, 67)
+        Me.Label5.Location = New System.Drawing.Point(277, 67)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(79, 20)
         Me.Label5.TabIndex = 4
@@ -108,32 +108,38 @@ Partial Class Form1
         '
         'cmbBaseCurrency
         '
+        Me.cmbBaseCurrency.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbBaseCurrency.FormattingEnabled = True
         Me.cmbBaseCurrency.Location = New System.Drawing.Point(127, 61)
         Me.cmbBaseCurrency.Name = "cmbBaseCurrency"
-        Me.cmbBaseCurrency.Size = New System.Drawing.Size(87, 28)
+        Me.cmbBaseCurrency.Size = New System.Drawing.Size(148, 28)
         Me.cmbBaseCurrency.TabIndex = 6
         '
         'cmbQueryCurrency
         '
+        Me.cmbQueryCurrency.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmbQueryCurrency.FormattingEnabled = True
         Me.cmbQueryCurrency.Location = New System.Drawing.Point(127, 108)
         Me.cmbQueryCurrency.Name = "cmbQueryCurrency"
-        Me.cmbQueryCurrency.Size = New System.Drawing.Size(87, 28)
+        Me.cmbQueryCurrency.Size = New System.Drawing.Size(148, 28)
         Me.cmbQueryCurrency.TabIndex = 7
         '
         'DTPickerFrom
         '
-        Me.DTPickerFrom.Location = New System.Drawing.Point(305, 62)
+        Me.DTPickerFrom.CustomFormat = "dd/MM/yyyy"
+        Me.DTPickerFrom.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DTPickerFrom.Location = New System.Drawing.Point(362, 62)
         Me.DTPickerFrom.Name = "DTPickerFrom"
-        Me.DTPickerFrom.Size = New System.Drawing.Size(200, 27)
+        Me.DTPickerFrom.Size = New System.Drawing.Size(119, 27)
         Me.DTPickerFrom.TabIndex = 8
         '
         'DTPickerTo
         '
-        Me.DTPickerTo.Location = New System.Drawing.Point(305, 111)
+        Me.DTPickerTo.CustomFormat = "dd/MM/yyyy"
+        Me.DTPickerTo.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.DTPickerTo.Location = New System.Drawing.Point(362, 111)
         Me.DTPickerTo.Name = "DTPickerTo"
-        Me.DTPickerTo.Size = New System.Drawing.Size(200, 27)
+        Me.DTPickerTo.Size = New System.Drawing.Size(119, 27)
         Me.DTPickerTo.TabIndex = 9
         '
         'FramePeriods
@@ -142,9 +148,9 @@ Partial Class Form1
         Me.FramePeriods.Controls.Add(Me.OptionButtonMonthly)
         Me.FramePeriods.Controls.Add(Me.OptionButtonQuartely)
         Me.FramePeriods.Controls.Add(Me.OptionButtonDaily)
-        Me.FramePeriods.Location = New System.Drawing.Point(522, 12)
+        Me.FramePeriods.Location = New System.Drawing.Point(505, 12)
         Me.FramePeriods.Name = "FramePeriods"
-        Me.FramePeriods.Size = New System.Drawing.Size(170, 153)
+        Me.FramePeriods.Size = New System.Drawing.Size(162, 151)
         Me.FramePeriods.TabIndex = 10
         Me.FramePeriods.TabStop = False
         Me.FramePeriods.Text = "Periods"
@@ -199,9 +205,9 @@ Partial Class Form1
         Me.FrameOutput.Controls.Add(Me.OptionButtonActiveWorkbook)
         Me.FrameOutput.Controls.Add(Me.OptionButtonNewWorkbook)
         Me.FrameOutput.Controls.Add(Me.ButtonTable)
-        Me.FrameOutput.Location = New System.Drawing.Point(16, 171)
+        Me.FrameOutput.Location = New System.Drawing.Point(16, 156)
         Me.FrameOutput.Name = "FrameOutput"
-        Me.FrameOutput.Size = New System.Drawing.Size(676, 158)
+        Me.FrameOutput.Size = New System.Drawing.Size(483, 149)
         Me.FrameOutput.TabIndex = 11
         Me.FrameOutput.TabStop = False
         Me.FrameOutput.Text = "Output"
@@ -210,7 +216,7 @@ Partial Class Form1
         '
         Me.FrameSheetAppend.Controls.Add(Me.OptionButtonAppend)
         Me.FrameSheetAppend.Controls.Add(Me.OptionButtonSheet)
-        Me.FrameSheetAppend.Location = New System.Drawing.Point(289, 62)
+        Me.FrameSheetAppend.Location = New System.Drawing.Point(291, 57)
         Me.FrameSheetAppend.Name = "FrameSheetAppend"
         Me.FrameSheetAppend.Size = New System.Drawing.Size(133, 86)
         Me.FrameSheetAppend.TabIndex = 6
@@ -271,25 +277,25 @@ Partial Class Form1
         '
         'ButtonExcel
         '
-        Me.ButtonExcel.Location = New System.Drawing.Point(16, 335)
+        Me.ButtonExcel.Location = New System.Drawing.Point(16, 311)
         Me.ButtonExcel.Name = "ButtonExcel"
         Me.ButtonExcel.Size = New System.Drawing.Size(75, 36)
         Me.ButtonExcel.TabIndex = 7
-        Me.ButtonExcel.Text = "Button1"
+        Me.ButtonExcel.Text = "Excel"
         Me.ButtonExcel.UseVisualStyleBackColor = True
         '
         'ProgressBar1
         '
-        Me.ProgressBar1.Location = New System.Drawing.Point(97, 335)
+        Me.ProgressBar1.Location = New System.Drawing.Point(97, 311)
         Me.ProgressBar1.Name = "ProgressBar1"
-        Me.ProgressBar1.Size = New System.Drawing.Size(595, 36)
+        Me.ProgressBar1.Size = New System.Drawing.Size(402, 36)
         Me.ProgressBar1.TabIndex = 12
         '
-        'Form1
+        'ShellRatesForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(704, 379)
+        Me.ClientSize = New System.Drawing.Size(680, 359)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.ButtonExcel)
         Me.Controls.Add(Me.FrameOutput)
@@ -306,7 +312,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Segoe UI", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
-        Me.Name = "Form1"
+        Me.Name = "ShellRatesForm"
         Me.Text = "Form1"
         Me.FramePeriods.ResumeLayout(False)
         Me.FramePeriods.PerformLayout()
